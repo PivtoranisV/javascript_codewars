@@ -38,3 +38,16 @@ function greet(name, owner) {
 function litres(time) {
   return Math.floor(time * 0.5); // Math.floor function that rounded to the smallest value.
 }
+
+//https://www.codewars.com/kata/555086d53eac039a2a000083
+
+function lovefunc(flower1, flower2) {
+  const flower1Even = flower1 % 2 === 0;
+  const flower2Even = flower2 % 2 === 0;
+
+  if ((flower1Even && !flower2Even) || (!flower1Even && flower2Even)) {
+    return true;
+  }
+  return false;
+}
+
