@@ -56,3 +56,19 @@ function lovefunc(flower1, flower2) {
  function stringToArray(string) {
    return string.split(' ')
 }
+
+//https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
+
+function DNAtoRNA(dna) {
+  let rna = "";
+  for (let i = 0; i < dna.length; i++) {
+    if (dna[i] === "T") {
+      rna += "U";
+    } else {
+      rna += dna[i];
+    }
+  }
+  return rna;
+}
+
+
