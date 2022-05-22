@@ -80,3 +80,12 @@ var min = function (list) {
 var max = function (list) {
   return Math.max(...list);
 };
+
+//https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
+
+function min(arr, toReturn) {
+  if (toReturn === "value") {
+    return Math.min(...arr);
+  }
+  return arr.indexOf(Math.min(...arr));
+}
