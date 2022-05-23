@@ -89,3 +89,15 @@ function min(arr, toReturn) {
   }
   return arr.indexOf(Math.min(...arr));
 }
+
+//https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
+
+function warnTheSheep(queue) {
+  const reverseQueue = queue.reverse();
+  if (reverseQueue[0] === "wolf") {
+    return "Pls go away and stop eating my sheep";
+  }
+  return `Oi! Sheep number ${reverseQueue.indexOf(
+    "wolf"
+  )}! You are about to be eaten by a wolf!`;
+}
