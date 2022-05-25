@@ -101,3 +101,7 @@ function warnTheSheep(queue) {
     "wolf"
   )}! You are about to be eaten by a wolf!`;
 }
+
+//https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
+
+const circleCircumference = (circle) => circle.radius * 2 * Math.PI;
